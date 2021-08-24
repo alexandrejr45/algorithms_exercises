@@ -3,14 +3,13 @@
 # product is odd
 
 numbers = [40, 75, 7, 748, 4, 85, 9, 3, 56]
-odd_product = [(x * y) for x in numbers for y in numbers if x != y and (x * y) % 2 != 0]
 
-# another solution
-#
-# for x in numbers:
-#     for y in numbers:
-#         if x != y:
-#             if (x * y) % 2 != 0:
-#                 print(str(x) + " x " + str(y) + " = " + str(x * y))
 
-print(odd_product)
+def distinct_odd(num: list):
+    for x in range(len(num)):
+        if x < len(num) - 1:
+            if num[x] % 2 != 0 and num[x + 1] % 2 != 0:
+                print(num[x] * num[x + 1])
+
+
+distinct_odd(numbers)
