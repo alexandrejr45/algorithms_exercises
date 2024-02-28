@@ -30,7 +30,7 @@ class Vector:
         return not self == other
 
     def __str__(self):
-        return f'< {str(self._coords)[:-1]}>'
+        return f'<{str(self._coords)[:-1]}>'
 
 
 v = Vector(7)
@@ -44,5 +44,3 @@ print(v)
 print(c)
 g = c + v
 print(g)
-
-

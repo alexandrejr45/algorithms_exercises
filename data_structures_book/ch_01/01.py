@@ -16,4 +16,12 @@ print(is_multiple(35, 5))
 print(is_multiple(40, 6))
 
 
+class Vector:
+    def main_function(self):
+        best_function = dict()
 
+        best_function.update(
+
+        )
+
+        
